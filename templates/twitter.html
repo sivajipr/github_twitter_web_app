@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="jumbotron">
+		<h1><center>TWITTER<center></h1>
+	<body><div align='left'>
+	Please enter the twitter username::
+	<form method="post" action="{{ url_for('twitter')}}">
+        <div align='center'>
+        <input type='text' name='val' style='width: 250px'>
+        <input type='submit' name='sbmt' value='OK'>
+<div align='left'>	{%for u in b %}
+	<br>{{u}}<hr>
+	{%endfor%}</div>
+        </form>
+	</body>
+	</div>
+{% endblock %}

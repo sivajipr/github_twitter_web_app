@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="jumbotron">
+		<h1><center>GITHUB</center></h1>
+	<body><div align='left'>
+	Please enter the Github username::
+	<form method="post" action="{{ url_for('github')}}">
+	<div align='center'>
+	<input name='val' width= 250px type='text'>
+	<p><input type='submit' value='OK' name='sbmt'></p>
+	</form>
+	<div align="left">
+{%for i in a%}
+<br>{{i}}<hr>
+{%endfor%}</div>
+	</body>
+	</div>
+{% endblock %}
